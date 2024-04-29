@@ -30,3 +30,4 @@ if option == 'humidity':
     st.plotly_chart(figure);
 
 st.info("Bharath :sunglasses:")
+ 
