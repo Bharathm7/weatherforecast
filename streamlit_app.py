@@ -2,10 +2,12 @@ import streamlit as st;
 import plotly.express as px;
 from backend import get_data
 
+
 st.title("WEATHER FORCAST");
 place = st.text_input("enter the place",value='bangalore');
 days = st.slider("how many days",min_value=1,max_value=5)
 option = st.selectbox("enter the kind",('temperature','sky','humidity'))
+
 
 st.subheader(f"{place}'s weather forecast for the next {days} days");
 if option == 'temperature':
